@@ -1,0 +1,93 @@
+<html>
+<title>SUBSCRIPTION PREDICTION</title>
+
+    <head>
+        <link rel="stylesheet" href="{{ url_for('static', filename = 'style.css') }}">
+    </head>
+
+    <body style="background-image: url(static/images/imagepred.jpeg); background-repeat: no-repeat; background-size: cover;">
+        <center>
+            <img src="static/images/logo1.png" height="100px"width="180px" style="padding-top: 0; ">
+        </center>
+
+        <center>
+            <div class="tab">
+                <h2 style="color: rgb(27, 47, 106);">Subcription Prediction</h2>
+                <center>
+                    <hr class="rounded">
+                </center>
+
+
+        <table  align="center" cellpadding="5" width="80%" height = "80%">
+            <form action="/subscribe" method = "POST">
+                <tr>
+                    <td><lable>Enter year_subscribed_in:</lable></td>
+                    <td><input type="text" id="period" name="period" placeholder="For Example: 2015"></td>
+                </tr>
+                <tr>
+                    <td><lable>Enter customer_id:</lable></td>
+                    <td><input type="text" id="user_id" name="user_id" placeholder="For Example: 100198"></td>
+                </tr>
+                <tr>
+                    <td><lable>Enter gender:</lable></td>
+                    <td><input type="text" id="sex" name="sex" placeholder="For Example: female"></td>
+                </tr>
+                <tr>
+                    <td><lable>Enter age:</lable></td>
+                    <td><input type="text" id="age" name="age" placeholder="For Example: 36"></td>
+                </tr>
+                <tr>
+                    <td><lable>Enter subscribed_days_count:</lable></td>
+                    <td><input type="text" id="subscribed_days" name="subscribed_days" placeholder="For Example: 62"></td>
+                </tr>
+                <tr>
+                    <td><lable>Enter multi_screen:</lable></td>
+                    <td><input type="text" id="multi_screen" name="multi_screen" placeholder="For Example: no"></td>
+                </tr>
+                <tr>
+                    <td><lable>Enter mail_subscribed:</lable></td>
+                    <td><input type="text" id="mail_subscribed" name="mail_subscribed" placeholder="For Example: no"></td>
+                </tr>
+                <tr>
+                    <td><lable>Enter weekly_mins_watched:</lable></td>
+                    <td><input type="text" id="weekly_mins" name="weekly_mins" placeholder="For Example: 148.35"></td>
+                </tr>
+                <tr>
+                    <td><lable>Enter minimum_daily_mins:</lable></td>
+                    <td><input type="text" id="min_mins_daily" name="min_mins_daily" placeholder="For Example: 12.2"></td>
+                </tr>
+                <tr>
+                    <td><lable>Enter maximum_daily_mins:</lable></td>
+                    <td><input type="text" id="max_mins_daily" name="max_mins_daily" placeholder="For Example: 16.81"></td>
+                </tr>
+                <tr>
+                    <td><lable>Enter weekly_max_night_mins:</lable></td>
+                    <td><input type="text" id="max_night_mins_weekly" name="max_night_mins_weekly" placeholder="For Example: 82"></td>
+                </tr>
+                <tr>
+                    <td><lable>Enter videos_watched:</lable></td>
+                    <td><input type="text" id="Num_of_videos_watched" name="Num_of_videos_watched" placeholder="For Example: 1"></td>
+                </tr>
+                <tr>
+                    <td><lable>Enter maximum_days_inactive:</lable></td>
+                    <td><input type="text" id="maximum_inactive_days" name="maximum_inactive_days" placeholder="For Example: 4"></td>
+                </tr>
+                <tr>
+                    <td><lable>Enter calls_customer_care:</lable></td>
+                    <td><input type="text" id="calls_customer_care" name="calls_customer_care" placeholder="For Example: 1"></td>
+                </tr>
+                <tr>
+                    <td align ="center" colspan="2"><button class = "button5">Find Subcription</button></a></td>
+                </tr>
+                <tr>
+                    <td align ="center" colspan="2">Go back to <a href="/server_home">Home</a></td>
+                </tr>
+            </form>
+        </table>
+
+    </div>
+
+</center>
+</body>
+
+</html>

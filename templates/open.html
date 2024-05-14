@@ -1,0 +1,39 @@
+<html>
+
+<head>
+	<link rel="stylesheet" href="{{ url_for('static', filename = 'style.css') }}">
+	<style type="text/css">
+	body{
+		background-image: url(static/images/proper.avif);
+		background-repeat: no-repeat;
+		background-size: cover;
+	}
+	.part{
+		border: solid;
+	         border-color: #0000ff;
+	         border-radius: 30px;
+	         margin: 300px auto; /* Adjust the top and bottom margins as needed */
+	         padding: 20px; /* Add padding for better visual appearance */
+	         text-align: center; /* Center-align the content */
+	}
+	.part h1{
+		color: #45380c;
+		font-size: 50px;
+
+	}
+</style>
+</head>
+
+<body>
+	<div class="part">
+        <center>
+					<h2>
+
+						{{n|safe}}
+
+				</h2>
+        </center>
+    </div>
+</body>
+
+</html>
